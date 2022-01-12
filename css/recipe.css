@@ -1,0 +1,56 @@
+h1, h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+    letter-spacing: 0.25em;
+}
+
+h1 {
+    display: table; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the table centered */
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+h2 {
+    display: table;
+    font-size: 18pt;
+    font-weight: normal;
+    text-align: left;
+}
+
+body {
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family:  Georgia, Garamond, serif;
+    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+}
+
+a {
+    color: #A4A400;
+}
+
+span.cake {
+    text-decoration: line-through;
+}
+
+.recipe-directions {
+    font-weight: bold;
+}
+
+.emp-text {
+    font-weight: bold;
+}
+
+p.quotations {
+    font-style: italic;
+    background-color: #FFFFA8;
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+
+ul {
+    list-style-image: url('https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif');
+}
