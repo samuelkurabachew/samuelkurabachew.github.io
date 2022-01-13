@@ -46,9 +46,9 @@ h1 {
 .reviewBody {
     max-width: 550px;
     column-count: 2;
-    column-width: 47%;
-    column-gap: 2%;
-    column-rule: 2%;
+    column-width: 47pt;
+    column-gap: 2pt;
+    column-rule: 2pt;
 }
 
 .review {
