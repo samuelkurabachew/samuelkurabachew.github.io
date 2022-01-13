@@ -1,0 +1,108 @@
+.header{
+    background-image: url(../images/bannerbg.png);
+    background-repeat: repeat;
+    text-align: center;
+}
+.header img{
+    min-height:50px;
+}
+
+body {
+    background-image: url(../images/background.png);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+}
+
+.container {
+    
+    max-width: 800px;
+    min-height: fit-content;
+    border: 4px solid gray;
+    border-radius: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+}
+
+.bodyHeader {
+    background-image: url(../images/rbg.png);
+    max-height: 83px;
+    display: flex;
+    align-items: center;
+}
+
+#rottenReview {
+    font-size: 48pt;
+	font-weight: bold;
+	color: red;
+}
+.reviewBody {
+    max-width: 550px;
+    column-count: 2;
+    column-width: 47%;
+    column-gap: 2%;
+    column-rule: 2%;
+}
+
+.review {
+    font-weight: bold;
+    font-size: 8pt;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.reviewer {
+    font-style: italic;
+    
+}
+
+.reviewer img {
+	float: left;
+	margin-right: 5px;
+}
+
+.sidebar {
+    background-color: #A2B964;
+    font-family: Arial, sans-serif;
+    font-size: 8pt;
+    max-width: 250px;
+    float: right;
+}
+
+dt{
+    font-weight: bold;
+    padding: 2pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#serchResult{
+    clear: both;
+    text-align: center;
+    background-color: #A2B964;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.validators {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 50%;
+}
