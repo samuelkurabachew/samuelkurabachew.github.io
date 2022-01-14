@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grades.css" type="text/css">
+    <title>Grades</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Retrieve your grade</h1>
+        <form action="http://mumstudents.org/params.php" method="get">
+            <fieldset>
+                <label class="textboxes">Name: </label>
+                <input type="text" placeholder="Enter your full name" required size="15" class="textboxes">
+                <br>
+                <label class="textboxes">Student ID</label>
+                <input type="text" placeholder="Enter your ID Number" required pattern="[0-9]{6}"
+                    title="ID Number Should be 6 Digits" size="15" maxlength="6" class="textboxes">
+                <br>
+                <label class="textboxes">Assignment: </label>
+                <select required>
+                    <option>Assignment 1</option>
+                    <option>Assignment 2</option>
+                    <option>Assignment 3</option>
+                </select>
+                <br>
+                <label>Entry: </label>
+                <label> <input type="radio" name="entry"> Feb </label>
+                <label><input type="radio" name="entry"> May </label>
+                <label><input type="radio" name="entry"> Aug </label>
+                <label><input type="radio" name="entry"> Nov </label>
+                <br>
+                <input type="checkbox" required title="This is Required">
+                <label> I confirm that I am checking my own grades</label>
+                <br><br>
+                <input type="submit" value="Get Grades!">
+            </fieldset>
+    </div>
+</body>
+
+</html>

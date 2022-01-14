@@ -1,0 +1,34 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(46, 173, 63);
+    font-style: italic;
+    text-align: center;
+}
+
+fieldset{
+    border-radius: 10px;
+    max-width: fit-content;
+    margin: auto;
+    background-color: burlywood;
+}
+
+input, label, option{
+    padding: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+input[type="submit"]{
+    text-align: center;
+    background-color: rgb(46, 173, 63);
+}
+label.textboxes {
+    text-align:left;
+    padding-right:14px;
+    display:inline-block;
+    min-width: 77px;
+}
+
+
+
+
+
