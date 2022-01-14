@@ -1,0 +1,34 @@
+fieldset {
+    max-width: 450px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #E0E1FF;
+}
+
+a{
+    color: red;
+}
+
+label{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align:left;
+    display:inline-block;
+    min-width: 130px;
+}
+
+input[type="submit"]{
+    background-color: #FEA3AC;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+legend{
+    border: 2px solid gray;
+    background-color: #F6F8F9;
+    border-radius: 5px;
+}
+
+#gender{
+    margin-left: 75px;
+}
