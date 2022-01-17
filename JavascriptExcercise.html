@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Excercise</title>
+</head>
+<body>
+    <p>1. What is the difference between the following 2 statements? <br>
+    <code>setTimeout(booyah, 2000);</code> <br>
+    <code>setTimeout(booyah(), 2000);</code> </p> 
+
+    <p><b>Answer:</b> <br>
+        <code>setTimeout(booyah, 2000);</code> -> Call <q>booyah</q> after 2 second. <br>
+        <code>setTimeout(booyah(), 2000)</code> -> booyah is going to be called Immediately.
+    </p>
+
+    <p>2. What do the following 2 alerts display (answer without running the code)?</p> 
+    <pre>
+        var myfunc = function(a, x) { 
+            return a * x;
+        };
+        var x = myfunc(2, 3);
+        var y = myfunc;
+        alert(x);
+        alert(y(2,3));</pre>
+    <p><b>Answer: <br> 6 <br> 6</b></p>
+
+    <p>3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+    says “BOOYAH!”</p> 
+
+    <pre>
+        setTimeout(booyah1, 2000);
+        setTimeout(booyah2(), 2000);
+    </pre>
+    
+    <p><b>Answer: </b></p>
+    <pre>
+        function booyah1(){
+            alert("BOOYAH!");
+        }
+        
+        function booyah2() {
+            return booyah1;
+        }
+
+        Put this functions in .js file and call setTimout.
+    </pre>
+    
+    <p>4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+    for using it)?</p> 
+
+    <p><b>Anwer: </b></p>
+    <p>The word relates with writing javascript as a completely separate file which means no JS code inside HTML even no function call inside html tag.
+    <br>
+    So for the sole purpose of separation of context we put files in the following format:
+    <ul>
+        <li>content (html)</li>
+        <li>presentation (css)</li>
+        <li>behavior (js)</li>
+    </ul>
+</p>
+</body>
+</html>
