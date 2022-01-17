@@ -17,11 +17,11 @@ function buttonFunctions(){
 
 function checkBoxFunctions() {
 
-    let bing = document.getElementById("checkbox");
+    let bling = document.getElementById("checkbox");
     var y = document.getElementById("textField");
     var z = document.getElementById("textArea");
 
-    if (bing.checked) {
+    if (bling.checked) {
         z.style.color = "green";
         z.style.fontWeight = "bold";
         z.style.textDecoration = "underline";
@@ -30,7 +30,7 @@ function checkBoxFunctions() {
         z.style.color = "black";
         z.style.fontWeight = "400";
         z.textDecoration = "none";
-        y.style.backgroundImage = "none";
+        document.body.style.backgroundImage = "none";
     }
 }
 
