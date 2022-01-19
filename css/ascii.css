@@ -1,0 +1,33 @@
+body{
+    background-color: #CCCCFF;
+    font: 14pt;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font: 32pt bold;
+    text-align: center;
+    margin: 0px;
+}
+
+#textArea {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    font-family: monospace;
+    font: 12pt bold;
+}
+
+.controls{
+    border: 5px solid black;
+    display: inline;
+}
+
+#validation {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+    text-align: right;
+}
