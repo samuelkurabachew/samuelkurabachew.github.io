@@ -201,11 +201,11 @@
                 var getAge = () => {return age};
                 var getSalary = () => {return salary};
                 
-                var setName = (newName) => {name = newName;},
+                var setName = (newName) => {this.name = newName;},
                 var setAge = (newAge) => {age = newAge;},
                 var setSalary = (newSalary) => {salary = newSalary;},
-                var increaseSalary = (percentage) => {salary = salary * (1 + percentage / 100);},
-                var incrementAge = () => {age ++ ;},
+                var increaseSalary = (percentage) => {salary = getSalary * (1 + percentage / 100);},
+                var incrementAge = () => {salary = getAge++ ;},
                 
                 return {
                     setName : setName,
@@ -234,8 +234,8 @@
                     setName : (newName) => {name = newName;},
                     setAge : (newAge) => {age = newAge;},
                     setSalary : (newSalary) => {salary = newSalary;},
-                    increaseSalary : (percentage) => {salary = salary * (1 + percentage / 100);},
-                    incrementAge : () => {age ++ ;},
+                    increaseSalary : (percentage) => {salary = getSalary * (1 + percentage / 100);},
+                    incrementAge : () => {salary = getAge ++ ;},
                 }
             })();
         </pre>
@@ -258,8 +258,8 @@
                 myEmployee.setName = (newName) => {name = newName;},
                 myEmployee.setAge = (newAge) => {age = newAge;},
                 myEmployee.setSalary = (newSalary) => {salary = newSalary;},
-                myEmployee.increaseSalary = (percentage) => {salary = salary * (1 + percentage / 100);},
-                myEmployee.incrementAge = () => {age ++ ;},
+                myEmployee.increaseSalary = (percentage) => {salary = getSalary * (1 + percentage / 100);},
+                myEmployee.incrementAge = () => {salary = getAge ++ ;},
                 
                 return myEmployee;
             })();
