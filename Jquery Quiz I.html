@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Quiz 1</title>
+</head>
+<body>
+    <p>1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”?</p>
+
+    <p><b>Answer: <br>
+        - A <i>jQuery function</i> is a method to change the state of object. It is also the value of jQuery or of $. 
+        This is the function that creates jQuery objects and registers handlers to be invoked when the DOM is ready; it also serves as the jQuery namespace.<br>
+        - A <i>jQuery object</i> is an object returned by the jQuery function. A jQuery object
+        represents a set of document elements and can also be called a “jQuery
+        result”, a “jQuery set”, or a “wrapped set”.
+        </b>
+    </p>
+
+    <p>2. Write jQuery code to find all h1 elements that are children of a div element and make their background
+    color red.</p>
+    <p>Sample HTML:
+        <pre>
+            &lt;body&gt;
+                &lt;h1&gt;abc&lt;/h1&gt;&lt;br&gt;
+                &lt;div&gt;
+                    &lt;h1&gt;div-1&lt;/h1&gt;
+                    &lt;h1&gt;div-2&lt;/h1&gt;
+                &lt;/div&gt;
+                &lt;h1&gt;xyz&lt;/h1&gt;
+            &lt;/body&gt;
+        </pre>
+    </p>
+
+    <p>
+        <b>Answer: </b>
+        <pre>$("div h1").css("background-color", "red");</pre>
+    </p>
+
+    <p>3. Use a jQuery method to insert the text "YES!" at the end of the &lt;p&gt; element.</p>
+
+    <p><b>Answer: </b>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js&quot;
+                type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+                &lt;script&gt;
+                &lt;!&mdash;INSERT YOUR JQUERY CODE HERE - - &gt;
+                $("&lt;span&gt;YES!&lt;/span&gt;").insertAfter("p");
+            &lt;/script&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;p&gt;Is jQuery FUN or what? &lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </p>
+</body>
+</html>
