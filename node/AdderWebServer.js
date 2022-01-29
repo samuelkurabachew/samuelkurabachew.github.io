@@ -5,8 +5,10 @@ var addmod = require('./addmod.js');
 http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
     var filename = "." + q.pathname;
-    if (q.pathname == "/add.js")
+    if (q.pathname == "/add.js") {
         addmod.add(req, res, q.query)
+        // console.log(q)
+    } 
     else
         fs.readFile(filename, function (err, data) {
             if (err) {

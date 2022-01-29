@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculator.css">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <form action="http://localhost:8080/calculate.js">
+        <fieldset class="Calculator">
+            <legend>Calculator:</legend>
+            <input type="text" name="first" /><br />
+            <input type="text" name="second" /><br />
+            <select id="operationSelector" name="operation">
+                <option selected disabled>Choose Operation</option>
+                <option value="add"> + </option>
+                <option value="subtract"> - </option>
+                <option value="multiply"> * </option>
+                <option value="divide"> / </option>
+            </select>
+            <input class="submit" type="submit" value="Calculate" />
+        </fieldset>
+    </form>
+</body>
+
+</html>

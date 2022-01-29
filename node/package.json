@@ -1,5 +1,5 @@
 {
-  "name": "hello-world",
+  "name": "simple-calculator",
   "version": "1.0.0",
   "main": "hello-world.js",
   "scripts": {
@@ -7,5 +7,5 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Arithmetic Operation"
 }

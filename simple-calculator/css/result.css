@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    margin-top: 40px;
+}  
+.btn {
+    border: none;
+    background-color: inherit;
+    font-size: 16px; 
+    margin-top: 16px;
+}
+
+/* On mouse-over */
+.btn:hover {background: #eee;}

@@ -1,0 +1,15 @@
+fieldset {
+    max-width: 450px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #E0E1FF;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit {
+    float: right;
+}

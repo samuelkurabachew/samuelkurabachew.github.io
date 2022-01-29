@@ -7,7 +7,7 @@ exports.add = function (req, res, vals) {
     res.write("<title>Calculator Web Site</title>");
     res.write("</head>");
     res.write("<body>");
-    res.write("<p>The sum is: ");
+    res.write("<p>The Answer is: ");
     res.write(String(sum));
     res.write("</p>");
     res.write("</body>");
