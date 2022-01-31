@@ -1,0 +1,22 @@
+html
+ title Number Quiz 
+body 
+
+h1 Number Quiz
+
+h4 Your score is #{score}
+-if(!done)
+   div 
+         h3 Guess the next number in the sequence.
+         p #{question}
+         form(action="/quiz" method="post") 
+             label Your answer:  
+             input(type="text" name="answer") 
+             input(type="text" name="score" value=score hidden="true") 
+             input(type="text" name="quiz_number", value=quiz_number, hidden="true")
+             div 
+                button Submit
+-else	 
+    div
+         p #{result}
+         a(href="/") Try Again :)			
