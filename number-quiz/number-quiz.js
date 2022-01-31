@@ -1,13 +1,13 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 const bodyParser = require('body-parser');
-var urlencodedParser = bodyParser.urlencoded({ extended: true });
-
-app.use(urlencodedParser);
-
+app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "jade");
-app.use((req, res, next) => { next(); }).listen(8080);
+
+app.listen(8080, function(){
+    console.log("Server is running on port 8080.");
+})
 
 var questions = ["1, 1, 2, 3, 5", "1, 4, 9, 16, 25", "2, 3, 5, 7, 11", "1, 2, 4, 8, 16"];
 var answers = [8, 36, 13, 32];
@@ -15,6 +15,7 @@ var answers = [8, 36, 13, 32];
 app.get('/', function (req, res) {
     res.render('number-quiz.pug', viewvalue(0, 0));
 });
+
 app.post('/quiz', function (req, res) {
     let par = req.body;
     let quiz_number = parseInt(par.quiz_number);
