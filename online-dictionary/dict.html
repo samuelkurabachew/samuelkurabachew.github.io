@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Dictionary</title>
+    <link rel="stylesheet" href="css/dict.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/dict.js"></script>
+</head>
+
+<body>
+    <div>
+        <header class="container">
+            <h1>Online Dictionary</h1>
+        </header>
+        <div class="container">
+            <hr>
+            <input type="text" id="term" placeholder="Enter word here..." />
+            <button id="lookup" type="button"> Search </button>
+            <div class="container" id="message" hidden>
+                <h5>This word does not exist in the database. We'll update in the future. </h5>
+            </div>
+        </div>
+        <section>
+            <div class="container" id="overlay">
+                <div class="spinner-container">
+                    <span class="spinner"></span>
+                </div>
+            </div>
+            <ul id="list"> </ul>
+        </section>
+    </div>
+</body>
+
+</html>
