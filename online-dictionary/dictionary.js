@@ -1,8 +1,8 @@
-var express = require('express');
-var word = require('./word');
-var fs = require('fs');
+const express = require('express');
+const word = require('./word');
+const fs = require('fs');
 
-var app = express();
+const app = express();
 app.use(express.static((__dirname, './')));
 
 app.listen(3000, function () {
